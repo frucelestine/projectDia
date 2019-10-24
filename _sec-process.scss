@@ -1,0 +1,171 @@
+.process {
+  background-color: #e5e5e5;
+  margin: 0 64px;
+}
+
+.process-link {
+  position: relative;
+  padding-left: 37px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 150%;
+  color: #56ccf2;
+}
+
+.process-link::before {
+  content: "";
+  position: absolute;
+  background-image: url(./images/Vector.svg);
+  height: 21px;
+  width: 21px;
+  left: 0;
+}
+
+.process-content {
+  margin: 0 auto;
+  max-width: 1087px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.process-note {
+  width: 362px;
+  margin-top: 160px;
+  color: #253757;
+}
+
+.note-head {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 140%;
+}
+
+.note-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.text-top {
+  padding-bottom: 20px;
+}
+
+.process-block {
+  width: 538px;
+  height: 817px;
+}
+.first-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12.6px;
+  line-height: 150%;
+}
+
+.item-number {
+  margin: 22px 0 23px;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.number-1 {
+  color: #56ccf2;
+}
+
+.number-2 {
+  color: #fcc304;
+}
+
+.number-3 {
+  color: #03d542;
+}
+
+.number-4 {
+  color: #f25656;
+}
+
+.block-item {
+  position: relative;
+  width: 240px;
+  height: 256px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  padding: 48px 32px;
+  box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.block-1 {
+  margin: 336px 0 128px 0;
+}
+
+.block-2 {
+  margin-top: 224.6px;
+}
+
+.block-3 {
+  z-index: 3;
+}
+
+.block-4 {
+  margin-top: -106px;
+  z-index: 3;
+}
+
+.block-item::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(0deg, #56ccf2, #56ccf2), #c4c4c4;
+  opacity: 0.1;
+  position: absolute;
+  display: block;
+}
+
+.block-item:nth-child(2)::before {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #fcc304;
+}
+
+.block-item:nth-child(3)::before {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(0deg, #03d542, #03d542), #c4c4c4;
+}
+
+.block-item:nth-child(4)::before {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #f25656;
+}

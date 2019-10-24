@@ -1,0 +1,86 @@
+.features {
+  position: relative;
+  height: 700px;
+  background-color: #56ccf2;
+  padding: 0 0 0 130px;
+  z-index: 0;
+}
+
+.features::before {
+  content: "";
+  position: absolute;
+  width: 732px;
+  height: 701px;
+  right: 0;
+  background-image: url(./images/rect.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.feature-link {
+  margin-top: 150px;
+  position: relative;
+  padding-left: 37px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 150%;
+  color: white;
+}
+
+.feature-item {
+  padding-top: 100px;
+}
+
+.feature-link::before {
+  content: "";
+  position: absolute;
+  background-image: url(./images/vec.svg);
+  height: 21px;
+  width: 21px;
+  left: 0;
+}
+
+.feature-head {
+  width: 362px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 140%;
+  color: #253757;
+}
+
+.feature-article {
+  position: relative;
+  width: 359px;
+}
+
+.feature-article::before {
+  content: "";
+  position: absolute;
+  height: 64px;
+  width: 64px;
+  top: 15px;
+  border-radius: 50%;
+  background-color: white;
+  background-image: url(./images/Union.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feature-article:nth-child(2)::before {
+  background-image: url(./images/calendar.png);
+}
+
+.feature-article:nth-child(3)::before {
+  background-image: url(./images/file.png);
+}
+
+.feature-article-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: white;
+  padding-left: 96px;
+}
+

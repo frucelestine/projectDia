@@ -1,0 +1,142 @@
+.foot {
+  background-color: #e5e5e5;
+  height: 688px;
+  padding: 100px 130px 0 130px;
+}
+
+.contact {
+  color: #152032;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.send-message {
+  width: 600px;
+  font-weight: bold;
+  font-size: 14.4px;
+  line-height: 150%;
+  & input,
+  textarea {
+    font-size: 18px;
+    padding-left: 50px;
+    font-family: "Muli", sans-serif;
+    font-weight: bold;
+    background-color: #e5e5e5;
+    margin-bottom: 48px;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #e1e1e1 1px;
+    width: 100%;
+  }
+  & button {
+    width: 226px;
+    height: 56px;
+    padding: 17px 89px;
+    background-color: #56ccf2;
+    color: white;
+    border-width: 0;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+.form-link {
+  @extend %link-style;
+  margin-bottom: 100px;
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(./images/Vector.svg);
+    height: 21px;
+    width: 21px;
+    left: 0;
+  }
+}
+
+.address-link {
+  @extend %link-style;
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(./images/Vector.svg);
+    height: 21px;
+    width: 21px;
+    left: 0;
+  }
+}
+
+.contact-address {
+  width: 362px;
+}
+
+.address-head {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 140%;
+}
+
+.contact-number,
+.address {
+  width: 164px;
+  font-weight: 800;
+  font-size: 12.6px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.highlight {
+  width: 164px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 150%;
+  color: #56ccf2;
+  letter-spacing: 2px;
+}
+
+.contact-form {
+  margin-top: 100px;
+}
+
+.contact-media img {
+  margin: 53px 48px 0 0;
+  cursor: pointer;
+}
+
+.foot-nav {
+  display: flex;
+  justify-content: space-between;
+  & .foot-design {
+    margin-right: 60px;
+    color: #253757;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    white-space: nowrap;
+  }
+}
+
+.foot-nav-items {
+  display: flex;
+  justify-content: center;
+  & li {
+    list-style: none;
+    margin-left: 63px;
+    & .foot-link {
+      text-transform: capitalize;
+      text-decoration: none;
+      color: #253757;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 150%;
+      white-space: nowrap;
+    }
+  }
+}
