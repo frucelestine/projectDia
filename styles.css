@@ -119,6 +119,10 @@ header {
   opacity: 1;
 }
 
+.nav-link:first-child:hover::before {
+  display: none;
+}
+
 .nav-link a {
   text-decoration: none;
   font-weight: bold;
@@ -139,8 +143,12 @@ header {
 
 .burger {
   display: none;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  position: fixed;
   cursor: pointer;
-  background-color: #56ccf2;
+  z-index: 99;
 }
 
 .burger div {
@@ -189,6 +197,11 @@ header {
   cursor: pointer;
 }
 
+.learn-more:hover {
+  -webkit-box-shadow: 4px 4px 10px gray;
+          box-shadow: 4px 4px 10px gray;
+}
+
 .social a {
   text-decoration: none;
   font-weight: 800;
@@ -197,6 +210,7 @@ header {
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   padding: 40px 0;
+  letter-spacing: 2px;
 }
 
 .social {
@@ -497,6 +511,11 @@ header {
           box-sizing: border-box;
 }
 
+.block-item:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
 .block-1 {
   margin: 336px 0 128px 0;
 }
@@ -688,6 +707,13 @@ header {
   z-index: 3;
 }
 
+.testimonial-block:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  background-color: rgba(88, 60, 60, 0.541);
+  border-radius: 5px;
+}
+
 .testimonial-block::before {
   content: "";
   position: absolute;
@@ -776,6 +802,11 @@ header {
   line-height: 150%;
   cursor: pointer;
   outline: none;
+}
+
+.vision-button:hover {
+  -webkit-box-shadow: 4px 4px 10px gray;
+          box-shadow: 4px 4px 10px gray;
 }
 
 .pins {
@@ -879,7 +910,7 @@ header {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: solid #e1e1e1 1px;
+  border-bottom: solid #c2bfbf 2px;
   width: 100%;
 }
 
@@ -896,6 +927,11 @@ header {
   line-height: 150%;
   cursor: pointer;
   outline: none;
+}
+
+.send-message button:hover {
+  -webkit-box-shadow: 4px 4px 10px gray;
+          box-shadow: 4px 4px 10px gray;
 }
 
 .form-link {
@@ -1004,7 +1040,12 @@ header {
     text-align: center;
   }
   .carousel .carousel__button {
+    width: 64px;
     border-radius: 50%;
+  }
+  .carousel .carousel__button:hover {
+    width: 84px;
+    height: 84px;
   }
   .carousel .carousel__button--right {
     right: 0;
@@ -1042,22 +1083,22 @@ header {
     height: -moz-fit-content;
     height: fit-content;
   }
-  .dia {
-    padding: 0;
-  }
   .nav-items {
     border-radius: 0 10px 10px 0;
     margin: 0;
-    width: 30%;
-    position: absolute;
+    width: 40%;
+    height: 500px;
+    padding: 60px 0 30px 0;
+    position: fixed;
+    top: 0;
     z-index: 5;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #262928c9;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
     -webkit-transition: -webkit-transform 1s ease-in;
     transition: -webkit-transform 1s ease-in;
     transition: transform 1s ease-in;
@@ -1068,7 +1109,9 @@ header {
     margin-bottom: 30px;
   }
   .nav-items .nav-link a {
-    color: #bb7f7f;
+    font-size: 25px;
+    z-index: 999;
+    color: white;
   }
   .nav-items .main {
     margin: 0 0 10px 0;
@@ -1091,8 +1134,8 @@ header {
             transform: rotate(-45deg) translate(15px, -4px);
   }
   .nav-active {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
   @-webkit-keyframes navLink {
     from {

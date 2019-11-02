@@ -29,7 +29,7 @@
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: solid #e1e1e1 1px;
+    border-bottom: solid #c2bfbf 2px;
     width: 100%;
   }
   & button {
@@ -45,6 +45,9 @@
     line-height: 150%;
     cursor: pointer;
     outline: none;
+    &:hover{
+      box-shadow: 4px 4px 10px gray;
+    }
   }
 }
 

@@ -35,6 +35,9 @@
   line-height: 150%;
   cursor: pointer;
   outline: none;
+  &:hover{
+    box-shadow: 4px 4px 10px gray;
+  }
 }
 
 .pins {

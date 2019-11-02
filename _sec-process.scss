@@ -105,6 +105,9 @@
   padding: 48px 32px;
   box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  &:hover{
+    transform: scale(1.2, 1.2);
+  }
 }
 
 .block-1 {
