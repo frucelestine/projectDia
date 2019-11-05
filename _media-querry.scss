@@ -1,37 +1,32 @@
 @media screen and (max-width: 1550px) {
   .carousel {
     text-align: center;
-    & .carousel__button {
-      width: 64px;
-      border-radius: 50%;
-      &:hover{
-        width: 84px;
-        height: 84px;
-      }
-    }
-    & .carousel__button--right {
-      right: 0;
-      bottom: -32px;
-      top: unset;
-    }
-    & .carousel__button--left {
-      right: 0;
-      bottom: -32px;
-      top: unset;
-      left: 0;
-    }
   }
+      .buttons{
+        margin: 0 auto;
+        top: unset;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: -35px;
+
+      }
 
   .social {
+    margin: 60px 0;
     flex-direction: row;
     right: unset;
     left: 50%;
+    padding-left: 0;
     transform: translateX(-50%);
     top: unset;
     & a {
       writing-mode: unset;
-      padding-right: 40px;
+      padding: 0 7px 0 0;
     }
+  }
+
+  .welcome{
+    margin: 50px 0 20px;
   }
 }
 
@@ -39,9 +34,9 @@
   header {
     height: fit-content;
   }
-  
+
   .nav-items {
-    border-radius: 0 10px 10px 0;
+    border-radius: 10px 0 0 10px;
     margin: 0;
     width: 40%;
     height: 500px;
@@ -51,7 +46,7 @@
     z-index: 5;
     flex-direction: column;
     background-color: #262928c9;
-    transform: translateX(-110%);
+    transform: translateX(250%);
     transition: transform 1s ease-in;
     & .nav-link {
       opacity: 0;
@@ -70,6 +65,10 @@
     }
   }
 
+  .nav-link::before{
+    top: 35px;
+  }
+
   .burger {
     display: block;
   }
@@ -85,7 +84,7 @@
   }
 
   .nav-active {
-    transform: translateX(-10%);
+    transform: translateX(150%);
   }
 
   @keyframes navLink {
@@ -113,6 +112,7 @@
     padding: 95px calc(50% - 371px) 0;
     & .welcome-note {
       & .welcome-text{
+        margin-top: 0;
         text-align: center;
       }
       padding: 0 30px;
@@ -123,12 +123,12 @@
     padding-bottom: 0;
     & .special-heading {
       font-size: 40px;
-      margin: -32px auto 20px;
+      margin: 20px auto;
     }
     & .special-article {
       & .article-block{
         margin-bottom: 40px;
-        width: 400px;
+        max-width: 400px;
         text-align: center;
       }
       & .article-heading{
@@ -157,6 +157,7 @@
       }
 
       .process-block {
+        width: unset;
         height: unset;
         & .first-block {
           flex-direction: column;
@@ -176,7 +177,7 @@
   }
   .features {
     height: fit-content;
-    padding: 0;
+    padding: 0 10px;
     & .feature-item {
       display: flex;
       flex-direction: column;
@@ -186,25 +187,29 @@
       display: block;
     }
     & .feature-head {
+      text-align: center;
       margin: 0 auto;
       position: relative;
       z-index: 4;
     }
     & .article-block {
       margin: 0 auto;
-      width: fit-content;
+      max-width: fit-content;
       & .feature-article {
-        width: 300px;
+        max-width: 300px;
       }
     }
     &::before {
-      height: 720px;
+      display: none;
     }
   }
 
   .testimonial {
+    margin-top: 40px;
+    text-align: center;
+    box-sizing: border-box;
     height: fit-content;
-    padding: 30px 130px 0 130px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -228,6 +233,7 @@
     padding: 30px calc(50% - 185px);
     & .vision-text {
       width: unset;
+      padding: 0 10px;
     }
     & .pins {
       display: none;
@@ -237,10 +243,12 @@
   .foot {
     text-align: center;
     height: fit-content;
-    padding: 0px 130px 0;
+    padding: 0;
     & .contact {
+      padding: 0 15px;
       flex-direction: column;
       align-items: center;
+      margin-bottom: 20px;
       & .send-message {
         width: unset;
         & .form-link {
@@ -262,11 +270,24 @@
     & .foot-nav {
       flex-direction: column;
       align-items: center;
+      & .foot-design{
+        order: 2;
+      }
       & .foot-nav-items {
+        & li{
+          margin: 0;
+        }
+        padding: 0;
         flex-direction: column;
+        order: 1;
         align-items: center;
       }
     }
   }
+  .send-message input,
+  .send-message textarea{
+    width: unset;
+  }
 }
+
 

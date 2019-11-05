@@ -35,8 +35,10 @@
   line-height: 150%;
   cursor: pointer;
   outline: none;
+  transition: background-color 0.5s, color 0.5s;
   &:hover{
-    box-shadow: 4px 4px 10px gray;
+    background-color: white;
+    color: skyblue;
   }
 }
 

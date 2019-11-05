@@ -77,11 +77,12 @@ header {
 .nav-link {
   list-style: none;
   position: relative;
+  width: fit-content;
 }
 
 .nav-link::before {
   content: "";
-  width: 64px;
+  width: 100%;
   height: 4px;
   background: linear-gradient(
       180deg,
@@ -125,7 +126,7 @@ header {
 .burger {
   display: none;
   top: 0;
-  left: 0;
+  right: 0;
   padding: 20px;
   position: fixed;
   cursor: pointer;
@@ -174,8 +175,11 @@ header {
   outline: none;
   border-width: 0;
   cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  box-sizing: border-box;
   &:hover{
-    box-shadow: 4px 4px 10px gray;
+    background-color: lightblue;
+    color: white;
   }
 }
 
@@ -206,7 +210,7 @@ header {
 }
 
 .carousel__track-container {
-  background: lightgreen;
+  background: lightblue;
   position: relative;
   height: 100%;
   overflow: hidden;
@@ -233,8 +237,6 @@ header {
 }
 
 .carousel__button {
-  position: absolute;
-  top: 50%;
   background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.25) 0%,
@@ -246,21 +248,28 @@ header {
   border: 0;
   outline: none;
   cursor: pointer;
-  transform: translateY(-50%);
-  z-index: 9999;
+  transition: background-color 1s, transform 1s;
   &:hover {
-    height: 70px;
-    width: 86px;
+    background-color: lightblue;
+    transform: scale(1.1);
   }
 }
 
+.buttons{
+  display: flex;
+  left: -81px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 3;
+}
 .carousel__button--left {
-  left: -80px;
   border-radius: 40% 0 0 40%;
 }
 
 .carousel__button--right {
   border-radius: 0 40% 40% 0;
+  margin-left: -4px;
 }
 
 .welcome {
@@ -321,6 +330,7 @@ header {
 }
 
 .article-block {
+  box-sizing: border-box;
   padding: 1px;
   text-align: left;
   width: 264px;

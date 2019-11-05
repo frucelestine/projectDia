@@ -31,7 +31,7 @@
 }
 
 .process-note {
-  width: 362px;
+  max-width: 362px;
   margin-top: 160px;
   color: #253757;
 }
@@ -105,6 +105,7 @@
   padding: 48px 32px;
   box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  transition: transform 0.5s;
   &:hover{
     transform: scale(1.2, 1.2);
   }

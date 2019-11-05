@@ -43,7 +43,7 @@
 }
 
 .feature-head {
-  width: 362px;
+  max-width: 362px;
   font-weight: 900;
   font-size: 32px;
   line-height: 140%;
@@ -52,7 +52,7 @@
 
 .feature-article {
   position: relative;
-  width: 359px;
+  max-width: 359px;
 }
 
 .feature-article::before {

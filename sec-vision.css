@@ -35,11 +35,13 @@
   line-height: 150%;
   cursor: pointer;
   outline: none;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .vision-button:hover {
-  -webkit-box-shadow: 4px 4px 10px gray;
-          box-shadow: 4px 4px 10px gray;
+  background-color: white;
+  color: skyblue;
 }
 
 .pins {
