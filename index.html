@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <div class="top-bar"></div>
   <div class="burger">
     <div class="burger1"></div>
     <div class="burger2"></div>
@@ -26,11 +27,11 @@
       <ul class="nav-items">
         <li class="nav-link main"><a href="#">Dia</a></li>
         <li class="nav-link"><a href="#">Home</a></li>
-        <li class="nav-link"><a href="#">About us</a></li>
-        <li class="nav-link"><a href="#">Services</a></li>
-        <li class="nav-link"><a href="#">Work</a></li>
-        <li class="nav-link"><a href="#">Contact us</a></li>
-        <li class="nav-link hire"><a href="#">Hire us</a></li>
+        <li class="nav-link"><a href="#about">About us</a></li>
+        <li class="nav-link"><a href="#service">Services</a></li>
+        <li class="nav-link"><a href="#work">Work</a></li>
+        <li class="nav-link"><a href="#contact">Contact us</a></li>
+        <li class="nav-link hire"><a href="#contact">Hire us</a></li>
       </ul>
     </nav>
     <div class="about">
@@ -47,11 +48,11 @@
         </div>
           <div class="carousel__track-container">
             <ul class="carousel__track">
-              <li class="carousel__slide current-slide"><img class="carousel__image" src="./images/comp5.jpg" alt="coffee time"></li>
-              <li class="carousel__slide"><img class="carousel__image" src="./images/comp1.jpg" alt="coffee time"></li>
-              <li class="carousel__slide"><img class="carousel__image" src="./images/comp2.jpg" alt="coffee time"></li>
-              <li class="carousel__slide"><img class="carousel__image" src="./images/comp3.jpg" alt="coffee time"></li>
-              <li class="carousel__slide"><img class="carousel__image" src="./images/comp4.jpg" alt="coffee time"></li>
+              <li class="carousel__slide current-slide"><img class="carousel__image" src="./images/slide2.jpg" alt="coffee time"></li>
+              <li class="carousel__slide"><img class="carousel__image" src="./images/slide1.jpg" alt="coffee time"></li>
+              <li class="carousel__slide"><img class="carousel__image" src="./images/slide3.jpg" alt="coffee time"></li>
+              <li class="carousel__slide"><img class="carousel__image" src="./images/slide4.jpg" alt="coffee time"></li>
+              <li class="carousel__slide"><img class="carousel__image" src="./images/slide5.jpg" alt="coffee time"></li>
             </ul>
           </div>
           <div>
@@ -65,7 +66,7 @@
     </div>
     </header>
     <main>
-    <section class="welcome">
+    <section class="welcome" id="about">
       <div class="welcome-note">
           <a href="#" class="welcome-link">welcome</a>
         <p class="welcome-text">By the same illusion which lifts the horizon of the sea to the level of the spectator on a
@@ -75,7 +76,7 @@
           with silver.</p>
           </div>
         </section>
-        <section class="speciality">
+        <section class="speciality" id="service">
         <h3 class="special-heading">What we do</h3>
       <div class="special-article">
         <div class="article-block">
@@ -98,7 +99,7 @@
         </div>
       </div>
     </section>
-  <section class="process">
+  <section class="process" id="work">
     <div class="process-content">
     <div class="process-note">
       <a href="#" class="process-link">process</a>
@@ -204,20 +205,19 @@
     <img class="pins pin12" src="./images/pin11.png" alt="pins">
   </section>
   </main>
-  <footer class="foot">
+  <footer class="foot" id="contact">
     <section class="contact">
     <div class="send-message">
         <a href="#" class="form-link">Send us a message</a><br>
         <form class="contact-form" action="#" method="POST">
-      <label for="">
-        Your email
+      <label for="">Your email</label><br>
         <input type="email" name="email"><br>
-        Your name
+        <label>Your name</label><br>
         <input type="text" name="name"><br>
-        Your message
+      <label>Your message</label><br>
         <textarea name="message" id=""></textarea><br>
         <button type="submit" class="contact-button">Send</button>
-      </label>
+
     </form>
     </div>
     <div class="contact-address">
@@ -238,10 +238,10 @@
       <p class="foot-design">Design by @mariuszdaniel</p>
       <ul class="foot-nav-items">
         <li><a class="foot-link" href="#">Home</a></li>
-        <li><a class="foot-link" href="#">About us</a></li>
-        <li><a class="foot-link" href="#">services</a></li>
-        <li><a class="foot-link" href="#">work</a></li>
-        <li><a class="foot-link" href="#">contact Us</a></li>
+        <li><a class="foot-link" href="#about">About us</a></li>
+        <li><a class="foot-link" href="#service">services</a></li>
+        <li><a class="foot-link" href="#work">work</a></li>
+        <li><a class="foot-link" href="#contact">contact Us</a></li>
       </ul>
     </section>
   </footer>
